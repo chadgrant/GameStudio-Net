@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameStudio.Metrics.Abstractions", "GameStudio.Metrics.Abstractions\GameStudio.Metrics.Abstractions.csproj", "{8714A97C-951D-4741-BD09-E9828FCEEDA8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameStudio.Metrics.Null", "GameStudio.Metrics.Null\GameStudio.Metrics.Null.csproj", "{28A32E0F-D8E8-48D6-A302-986D4779C9EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameStudio.Metrics.Prometheus", "GameStudio.Metrics.Prometheus\GameStudio.Metrics.Prometheus.csproj", "{C837A863-CB51-4B33-8298-F3DD2BD9AFE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8714A97C-951D-4741-BD09-E9828FCEEDA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8714A97C-951D-4741-BD09-E9828FCEEDA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8714A97C-951D-4741-BD09-E9828FCEEDA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8714A97C-951D-4741-BD09-E9828FCEEDA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28A32E0F-D8E8-48D6-A302-986D4779C9EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28A32E0F-D8E8-48D6-A302-986D4779C9EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28A32E0F-D8E8-48D6-A302-986D4779C9EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28A32E0F-D8E8-48D6-A302-986D4779C9EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C837A863-CB51-4B33-8298-F3DD2BD9AFE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C837A863-CB51-4B33-8298-F3DD2BD9AFE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C837A863-CB51-4B33-8298-F3DD2BD9AFE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C837A863-CB51-4B33-8298-F3DD2BD9AFE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0A30107-A346-4A6F-9E46-0B89D412E36B}
+	EndGlobalSection
+EndGlobal

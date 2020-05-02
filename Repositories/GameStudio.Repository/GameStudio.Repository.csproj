@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Description>Package to share across all Repositories (sql,document,etc)</Description>
+    <PackageTags>repository</PackageTags>
+  </PropertyGroup>
+
+</Project>

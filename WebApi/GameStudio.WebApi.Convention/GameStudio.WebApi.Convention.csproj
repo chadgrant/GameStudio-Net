@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>GameStudio</Authors>
+    <Description>WebApi project that uses the configuration conventions</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ConfigurationConventions\GameStudio.ConfigurationConventions\GameStudio.ConfigurationConventions.csproj" />
+    <ProjectReference Include="..\GameStudio.WebApi\GameStudio.WebApi.csproj" />
+  </ItemGroup>
+
+</Project>

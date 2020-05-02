@@ -1,0 +1,28 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>7.3</LangVersion>
+    <RepoRoot>$(MSBuildThisFileDirectory)</RepoRoot>
+    <RepoRelativeProjectDir>$([MSBuild]::MakeRelative($(RepoRoot), $(MSBuildProjectDirectory)))</RepoRelativeProjectDir>
+
+    <NoWarn>$(NoWarn);1591</NoWarn>
+
+    <IsUnitTestProject>false</IsUnitTestProject>
+    <IsUnitTestProject Condition="$(MSBuildProjectName.EndsWith('.Tests'))">true</IsUnitTestProject>
+
+    <IsBenchmarkProject>false</IsBenchmarkProject>
+    <IsBenchmarkProject Condition="$(MSBuildProjectName.EndsWith('.Benchmarks'))">true</IsBenchmarkProject>
+
+    <GenerateDocumentationFile Condition=" '$(IsUnitTestProject)' != 'true'">true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GeneratePackageOnBuild Condition=" '$(IsUnitTestProject)' != 'true' AND '$(IsBenchmarkProject)' != 'true'">true</GeneratePackageOnBuild>
+    <Authors>GameStudio</Authors>
+    <RepositoryUrl>https://github.com/chadgrant/GameStudio-Net</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <PackageProjectUrl>https://github.com/chadgrant/GameStudio-Net</PackageProjectUrl>
+    <PackageIconUrl>https://avatars3.githubusercontent.com/u/1848046?s=200&amp;v=4</PackageIconUrl>
+  </PropertyGroup>
+
+</Project>
