@@ -11,7 +11,7 @@ namespace GameStudio.Cloud.Aws
     public class AwsAuthentication
     {
         static readonly RegionEndpoint DefaultRegion = RegionEndpoint.USEast1;
-        static readonly ConcurrentBag<string> Environments = new ConcurrentBag<string>(new []{ "PS_ENVIRONMENT","ENVIRONMENT", "ASPNETCORE_ENVIRONMENT" });
+        static readonly ConcurrentBag<string> Environments = new ConcurrentBag<string>(new []{ "GS_ENVIRONMENT","ENVIRONMENT", "ASPNETCORE_ENVIRONMENT" });
         static readonly ConcurrentBag<string> Profiles = new ConcurrentBag<string>(new[] { "default", "development", "staging", "production" });
 
         readonly RegionEndpoint _region;
@@ -39,7 +39,7 @@ namespace GameStudio.Cloud.Aws
 
         public AwsAuthentication()
         {
-            
+
         }
 
         public AWSCredentials GetCredentials()

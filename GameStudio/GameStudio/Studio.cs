@@ -5,10 +5,8 @@ namespace GameStudio
     [Flags]
     public enum Studio : byte
     {
-        Burlingame = 1,
-        Austin = 2,
-        LasVegas = 3,
-
-        Israel = 5
+        ThreeFortyThree = 1,
+        Bungie = 2,
+        Blizzard = 3
     }
 }
